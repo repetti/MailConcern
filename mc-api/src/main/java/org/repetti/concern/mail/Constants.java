@@ -1,4 +1,4 @@
-package org.repetti.mail.concern.api;
+package org.repetti.concern.mail;
 
 /**
  * Created on 21/06/15.

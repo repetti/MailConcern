@@ -1,3 +1,5 @@
 rootProject.name = 'MailConcern'
 include 'mc-api'
+include 'mc-mail-connector'
+include 'mc-storage'
 

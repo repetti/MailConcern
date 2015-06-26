@@ -4,6 +4,7 @@
 *.iml
 /gradle
 /gradlew*
+*.secret
 
 *.class
 
