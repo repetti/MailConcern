@@ -1,2 +1,8 @@
 group 'org.repetti.mail.concern'
 version '0.1-SNAPSHOT'
+
+allprojects {
+    project.ext {
+        versionFile = rootProject.file("versions.gradle")
+    }
+}

@@ -1,0 +1,29 @@
+group 'org.repetti.mail.concern'
+version '0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7
+repositories {
+    mavenCentral()
+}
+
+apply from: project.versionFile
+
+dependencies {
+    compile group: 'org.jetbrains', name: 'annotations', version: project.versionAnnotations
+    compile group: 'org.slf4j', name: 'slf4j-api', version: project.versionSlf4j
+
+    testRuntime group: 'org.slf4j', name: 'slf4j-simple', version: project.versionSlf4j
+
+    testCompile group: 'org.apache.tomcat', name: 'tomcat-servlet-api', version: project.versionTomcat
+    testCompile group: 'org.apache.tomcat', name: 'tomcat-coyote', version: project.versionTomcat
+    testCompile group: 'org.apache.tomcat', name: 'tomcat', version: project.versionTomcat
+    testCompile group: 'org.apache.tomcat', name: 'tomcat-jasper', version: project.versionTomcat
+//    testCompile group: 'org.apache.tomcat', name: 'tomcat-websocket', version: project.versionTomcat
+    testCompile group: 'org.apache.tomcat', name: 'tomcat-catalina', version: project.versionTomcat
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
